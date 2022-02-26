@@ -25,11 +25,40 @@
     max-width: 270px;
     
 }
-.card>img{
-    border-radius: 10px;
-    width: 270px;
+
+.image{
+    position: relative;
+    
+    
     
 }
+.preview{
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    border-radius: 10px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 247,0.5);
+    opacity:0 ;
+    z-index: 1;
+}
+
+
+ .card>.image>img{
+    border-radius: 10px;
+    width: 270px;
+    opacity: 1;
+    
+}
+.image:hover .preview {
+    opacity: 1;
+}
+
+
+
 
 
 .autor{
