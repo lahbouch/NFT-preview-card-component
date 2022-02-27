@@ -41,9 +41,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 255, 247,0.5);
+    background-color: rgba(0, 255, 247,0.3);
+    transition: 0.5s ease-in-out;
     opacity:0 ;
     z-index: 1;
+    cursor: pointer;
+    visibility: hidden;
 }
 
 
@@ -54,6 +57,7 @@
     
 }
 .image:hover .preview {
+    visibility: visible;
     opacity: 1;
 }
 
@@ -87,16 +91,17 @@
     width: 100%;
     margin-bottom: 20px;
 }
-h2{
+h1{
     font-size: 1.4rem;
     margin-top: 20px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
 }
 
-h2:hover{
+h1:hover{
     color: hsl(178, 100%, 50%);
-    cursor: pointer;
+   
 }
 p{
     font-size: 0.9rem;
@@ -117,6 +122,7 @@ span{
     width: 0.7em;
 }
 .price{
+    font-weight: 600 ;
     color:hsl(178, 100%, 50%);
     
 }
@@ -134,4 +140,7 @@ a{
 a:hover{
     color: hsl(178, 100%, 50%);
     
+}
+.autor div a{
+    font-weight: 600;
 }
